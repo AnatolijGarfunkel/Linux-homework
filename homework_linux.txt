@@ -1,0 +1,13 @@
+   0 date +%D > homework.txt
+   1 mkdir -p /tmp/hw3/newfile/Anatolij/
+   2 echo >> homework.txt "Homework 3"
+
+   4 df -h / | tail -1 >> homework.txt 
+
+   6 history | tail -5 >> homework.txt 
+
+  10 cat /proc/cpuinfo | grep vendor_id >> homework.txt 
+
+  13 cat /proc/cpuinfo | grep vendor_id | awk '{print $3}' >> homework.txt 
+
+  15 mv homework.txt /tmp/hw3/newfile/Anatolij/
